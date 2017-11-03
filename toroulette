@@ -1,4 +1,5 @@
 #!/bin/bash -e
 
-tor=`ls -1 bin/tor-* | shuf -n 1`
+dir=`dirname $BASH_SOURCE`
+tor=`ls -1 $dir/bin/tor-* | shuf -n 1`
 $tor $@
