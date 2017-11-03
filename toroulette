@@ -1,0 +1,4 @@
+#!/bin/bash -e
+
+tor=`ls -1 bin/tor-* | shuf -n 1`
+$tor $@
